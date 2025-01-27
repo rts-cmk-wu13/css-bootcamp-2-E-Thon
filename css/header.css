@@ -1,14 +1,17 @@
 .menu{
     height: auto;
-    padding: 2rem 1rem;
     width: 100%;
+    position: relative;
+    font-weight: bold;
 }
 
 /* TOP NAV*/
-.menu__top:not(:nth-of-type(2)){
+.menu__top{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: end;
+    margin: 1rem auto;
+    padding: 0 .5rem;
 }
 .menu__top__burger{
     padding-right: 2%;
@@ -20,19 +23,14 @@
     text-transform: uppercase;
 }
 .menu__top__search{
-    margin-left: -40%;
-}
-.fa-magnifying-glass{}
-.menu__top__logo{
-    justify-content: center;
+    position: absolute;
+    left: 8%;
 }
 .menu__top__logo img{
     height: 5em;
 }
-.menu__top__login{}
-.menu__top__login__link{}
-.fa-user{
-    padding-left: 2%;
+.menu__top__login{
+    white-space: nowrap;
 }
 
 /* BOTTOM NAV */
@@ -46,6 +44,8 @@
     display: flex;
     gap: 2rem;
     white-space: nowrap;
-    padding: 1rem;
+    padding: .5rem;
 }
-.menu__bottom__link{}
+.menu__bottom__links a:hover{
+    color: red;
+}
