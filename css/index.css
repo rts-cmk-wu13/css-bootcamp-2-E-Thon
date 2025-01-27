@@ -18,7 +18,7 @@
 
 .news__strong {
     grid-area: 1 / 2 / 2 / 3;
-    color: red;
+    color: rgb(237, 28, 36);
     font-weight: bold;
     font-family: "Roboto", serif;
     font-optical-sizing: auto;
@@ -141,13 +141,21 @@
 
 .fa-at {}
 
-.abroad__text__more {}
+.abroad__text__more {
+    text-align: center;
+}
 
 .abroad__text__more__header {}
 
 .abroad__text__more__button {}
 
-.button1 {}
+.button1 {
+    background-color: rgb(237, 28, 36);
+    color: white;
+    border-radius: 5px;
+    padding: .5rem 2rem;
+    text-transform: uppercase;
+}
 
 .abroad__text__more__p {}
 
