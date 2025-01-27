@@ -18,7 +18,7 @@
 
 .news__strong {
     grid-area: 1 / 2 / 2 / 3;
-    color: rgb(237, 28, 36);
+    color: #DD0000;
     font-weight: bold;
     font-family: "Roboto", serif;
     font-optical-sizing: auto;
@@ -100,66 +100,150 @@
     grid-area: 1 / 2 / -1 / -1;
     justify-self: end;
 }
-
 .abroad__author {
     grid-area: 2 / 1 / 3 / 2;
 }
+.abroad__author__info {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 2%;
+    margin-bottom: 1rem;
+}
+.abroad__author__info__img{
+    grid-area: 1 / 1 / -1 / 2;
+    border-radius: 50%;
+}
+.abroad__author__info__twitter {
+    grid-area: 2 / 4 / -1 / -1;
+}
+.abroad__author__info__name.name1 {
+    grid-area: 1 / 2 / 2 / -1;
+}
 
-.abroad__author__1 {}
+.abroad__author__info__mail.mail1 {
+    grid-area: 2 / 2 / -1 / 4;
+}
+.abroad__author__info__name.name2 {
+    grid-area: 1 / 1 / 2 / -1;
+}
+.abroad__author__info__mail.mail2 {
+    grid-area: 2 / 1 / -1 / -1;
+}
 
-.abroad__author__1__name {}
+.abroad__author__info__name {
+    font-weight: 500;
+}
 
-.abroad__author__1__mail {}
+.mail1 .fa-envelope{
+    background-color: #999999;
+    font-size: .5rem;
+    padding: 4.1%;
+}
+.mail2 .fa-envelope {
+    background-color: #999999;
+    font-size: .5rem;
+    padding: 1.2%;
+}
 
-.fa-envelope {}
-
-.abroad__author__1__twitter {}
-
-.fa-twitter {}
-
-.abroad__author__2 {}
-
-.abroad__author__1__name {}
-
-.abroad__author__1__mail {}
+.abroad__author__info__twitter .fa-twitter {
+    background-color: #26C4F1;
+    font-size: .5rem;
+    padding: 2%;
+}
+.abroad__author__info__mail .fa-envelope,
+.abroad__author__info__twitter .fa-twitter {
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    margin-right: 4%;
+}
 
 .abroad__text {
     grid-area: 2 / 2 / 3 / -1;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2.5%;
 }
 
-.abroad__text__p {}
+.abroad__text__p {
+    margin-bottom: 2rem;
+}
+.abroad__text__p:first-of-type {
+    grid-area: 1 / 1 / 2 / 2;
+}
+.abroad__text__p:last-of-type {
+    grid-area: 2 / 1 / 3 / -1;
+}
 
-.abroad__text__p__links {}
+.abroad__text__p__links {
+    grid-area: 1 / 2 / 2 / -1;
+    display: flex;
+    column-gap: 2%;
+    white-space: nowrap;
+    height: fit-content;
+    justify-content: end;
+}
 
-.abroad__text__p__links__link {}
+.abroad__text__p__links__link {
+    padding: .5rem 1rem;
+    border-radius: 2px;
+}
 
-.fa-square-facebook {}
+.abroad__text__p__links__link .fa-twitter,
+.abroad__text__p__links__link .fa-square-facebook,
+.abroad__text__p__links__link .fa-at {
+    padding-right: 1rem;
+}
 
-.abroad__text__p__links__link .fa-twitter {}
+.abroad__text__p__links__link a {
+    color: white;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: .8rem;
+}
 
-.abroad__text__p__links__link {}
+.abroad__text__p__links__link:first-of-type{
+    background-color: #306199;
+}
+.abroad__text__p__links__link:nth-of-type(2){
+    background-color: #26C4F1;
+}
+.abroad__text__p__links__link:last-of-type{
+    background-color: #999999;
 
-.fa-at {}
+}
 
 .abroad__text__more {
     text-align: center;
+    grid-area: 3 / 1 / 4 / -1;
 }
 
-.abroad__text__more__header {}
-
-.abroad__text__more__button {}
+.abroad__text__more__header {
+    margin-bottom: 2rem;
+}
 
 .button1 {
-    background-color: rgb(237, 28, 36);
+    background-color: #DD0000;
     color: white;
     border-radius: 5px;
-    padding: .5rem 2rem;
+    padding: .5rem 3.5rem;
     text-transform: uppercase;
 }
 
-.abroad__text__more__p {}
+.abroad__text__more__p {
+    margin-top: 1.5rem;
+}
 
-.abroad__text__more__p__link {}
+.abroad__text__more__p:not(a) {
+    color: #666666;
+}
+
+.abroad__text__more__p__link {
+    text-decoration: underline;
+}
 
 
 
@@ -173,6 +257,7 @@
     column-gap: 2%;
 
 }
+
 .stories__top {
     grid-area: 1 / 1 / 2 / -1;
     display: flex;
@@ -181,19 +266,27 @@
     padding-bottom: .2rem;
     white-space: nowrap;
 }
-.fa-compass, .stories__top__arrows {
+
+.fa-compass,
+.stories__top__arrows {
     color: #cccccc;
-    
+
 }
-.fa-compass, .stories__top__arrows {
+
+.fa-compass,
+.stories__top__arrows {
     font-size: 1.2rem;
 }
-.fa-compass, .fa-circle-right {
+
+.fa-compass,
+.fa-circle-right {
     padding-left: .5rem;
 }
+
 .stories__article {
     margin: 2rem 0;
 }
+
 .stories__article img {
     margin-bottom: .8rem;
 }
