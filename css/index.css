@@ -291,7 +291,7 @@
 }
 
 
-/* 4th: LATEST NEWS (det her afsnit er lort. her fandt jeg ud af, alle mine forrige grids skulle have været lavet med flere kolonner og ved at lave et stort overordnet grid på hele main, som derfra blev lavet til subgrid.*/
+/* 4th: LATEST NEWS (det her afsnit er lort. her fandt jeg ud af, alle mine forrige grids skulle have været lavet med flere kolonner og ved at lave et stort overordnet grid på hele main, som derfra blev lavet til subgrids.*/
 .latestNews{
     display: grid;
     grid-template-columns: 33% 66%;
@@ -343,6 +343,7 @@
 .latestNews__articles__group__article strong {
     grid-row: 1 / 2;
     color:#DD0000;
+    text-transform: uppercase;
 }
 .latestNews__articles__group__article a {
     grid-row: 2 / -1;
@@ -418,7 +419,6 @@
     margin-bottom: 1rem;
     width: 80%;
 }
-.recommendations__sections__comment__link{}
 
 .recommendations__sections__login:not(a){
     color:#cccccc;
