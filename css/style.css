@@ -20,7 +20,16 @@ h1 {
     font-size: 1.8rem;
     font-weight: 900;
 }
-
+h2 {
+    font-weight: 900;
+    color: red;
+    font-size: 1.2rem;
+}
+h3 {
+    font-weight: 900;
+    color: red;
+    font-size: 1rem;
+}
 
 /* CSS Document */
 * {
