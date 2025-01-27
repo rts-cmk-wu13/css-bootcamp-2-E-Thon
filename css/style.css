@@ -16,6 +16,10 @@ font-family: "Merriweather", serif;
 font-weight: 400;
 font-style: normal;
 */
+h1 {
+    font-size: 1.8rem;
+    font-weight: 900;
+}
 
 
 /* CSS Document */
