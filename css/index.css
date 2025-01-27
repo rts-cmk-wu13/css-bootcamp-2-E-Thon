@@ -255,7 +255,6 @@
     grid-template-rows: repeat(2, auto);
     margin: 2rem auto;
     column-gap: 2%;
-
 }
 
 .stories__top {
@@ -289,4 +288,59 @@
 
 .stories__article img {
     margin-bottom: .8rem;
+}
+
+
+/* 4th: LATEST NEWS (det her afsnit er lort. her fandt jeg ud af, alle mine forrige grids skulle have været lavet med flere kolonner og ved at lave et stort overordnet grid på hele main, som derfra blev lavet til subgrid.*/
+.latestNews{
+    display: grid;
+    grid-template-columns: 33% 66%;
+    grid-template-rows: auto;
+}
+.latestNews__top{
+    grid-area: 1 / 1 / 2 / -1;
+    display: grid;
+    grid-template-columns: subgrid;
+}
+.latestNews__top__header{
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.latestNews__top__link{
+    grid-area: 1 / 2 / 2 / -1;
+    justify-self: end;
+}
+
+.latestNews__aside{
+    grid-area: 2 / 1 / 3 / 2;
+    display: none;
+}
+/*table er lavet forkert. Det skulle have været lavet med som en liste og ikke en tabel med kun én række og mange kolonner...*/
+.latestNews__aside__table{
+    display: block;
+}
+.latestNews__articles{
+    grid-area: 2 / 2 / -1 / -1;
+}
+.latestNews__articles__frontpage{
+}
+.fa-house{}
+
+.latestNews__articles__group{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+    grid-template-rows: auto;
+    column-gap: 3%;
+}
+
+.latestNews__articles__group__article{
+    display: grid;
+    grid-template-rows: auto;
+}
+
+.latestNews__articles__group__article strong {
+    grid-row: 1 / 2;
+}
+.latestNews__articles__group__article a {
+    grid-row: 2 / -1;
 }
