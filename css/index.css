@@ -1,0 +1,425 @@
+/* ADVERTICEMENT */
+.advertisement {
+    margin: 1rem;
+}
+
+.advertisement__link__image {
+    height: 10rem;
+}
+
+
+/* 1st: NEWS SECTION */
+.news {
+    display: grid;
+    grid-template-columns: 33% 11% 55%;
+    row-gap: 1rem;
+    margin: 3rem auto;
+}
+
+.news__strong {
+    grid-area: 1 / 2 / 2 / 3;
+    color: #DD0000;
+    font-weight: bold;
+    font-family: "Roboto", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.news__time {
+    grid-area: 1 / 3 / 2 / -1;
+    text-transform: uppercase;
+    color: #cccccc;
+    font-weight: bold;
+    font-family: "Roboto", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.news__header {
+    grid-area: 2 / 2 / 3 / -1;
+}
+
+.news__p {
+    grid-area: 3 / 2 / 4 / -1;
+    color: #666666;
+}
+
+.news__image {
+    grid-area: 4 / 1 / 5 / -1;
+    display: grid;
+    grid-template-columns: 33% 66%;
+}
+
+.news__image__img {
+    grid-area: 1 / 2 / -1 / 3;
+}
+
+.news__image__figcaption {
+    grid-area: 1 / 1 / -1 / 2;
+    color: #666666;
+    text-align: end;
+    margin-right: 1.5rem;
+    font-size: .8rem;
+}
+
+
+/* 2nd: ABROAD */
+.abroad {
+    display: grid;
+    grid-template-columns: 33% 66%;
+    column-gap: 1rem;
+
+}
+
+.abroad__info {
+    grid-area: 1 / 1 / 2 / -1;
+    display: grid;
+    grid-template-columns: subgrid;
+    column-gap: 1rem;
+    border-bottom: dotted 2px #999999;
+    padding-bottom: .5rem;
+    margin-bottom: 1rem;
+}
+
+.abroad__info__header {
+    grid-area: 1 / 1 / -1 / 2;
+}
+
+.abroad__info__date {
+    grid-area: 1 / 2 / -1 / -1;
+    font-weight: 900;
+}
+
+.fa-clock,
+.fa-comments {
+    margin-right: .5rem;
+    color: #cccccc;
+}
+
+.abroad__info__comments {
+    grid-area: 1 / 2 / -1 / -1;
+    justify-self: end;
+}
+.abroad__author {
+    grid-area: 2 / 1 / 3 / 2;
+}
+.abroad__author__info {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 2%;
+    margin-bottom: 1rem;
+}
+.abroad__author__info__img{
+    grid-area: 1 / 1 / -1 / 2;
+    border-radius: 50%;
+}
+.abroad__author__info__twitter {
+    grid-area: 2 / 4 / -1 / -1;
+}
+.abroad__author__info__name.name1 {
+    grid-area: 1 / 2 / 2 / -1;
+}
+
+.abroad__author__info__mail.mail1 {
+    grid-area: 2 / 2 / -1 / 4;
+}
+.abroad__author__info__name.name2 {
+    grid-area: 1 / 1 / 2 / -1;
+}
+.abroad__author__info__mail.mail2 {
+    grid-area: 2 / 1 / -1 / -1;
+}
+
+.abroad__author__info__name {
+    font-weight: 500;
+}
+
+.mail1 .fa-envelope{
+    background-color: #999999;
+    font-size: .5rem;
+    padding: 4.1%;
+}
+.mail2 .fa-envelope {
+    background-color: #999999;
+    font-size: .5rem;
+    padding: 1.2%;
+}
+
+.abroad__author__info__twitter .fa-twitter {
+    background-color: #26C4F1;
+    font-size: .5rem;
+    padding: 2%;
+}
+.abroad__author__info__mail .fa-envelope,
+.abroad__author__info__twitter .fa-twitter {
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    margin-right: 4%;
+}
+
+.abroad__text {
+    grid-area: 2 / 2 / 3 / -1;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2.5%;
+}
+
+.abroad__text__p {
+    margin-bottom: 2rem;
+}
+.abroad__text__p:first-of-type {
+    grid-area: 1 / 1 / 2 / 2;
+}
+.abroad__text__p:last-of-type {
+    grid-area: 2 / 1 / 3 / -1;
+}
+
+.abroad__text__p__links {
+    grid-area: 1 / 2 / 2 / -1;
+    display: flex;
+    column-gap: 2%;
+    white-space: nowrap;
+    height: fit-content;
+    justify-content: end;
+}
+
+.abroad__text__p__links__link {
+    padding: .5rem 1rem;
+    border-radius: 2px;
+}
+
+.abroad__text__p__links__link .fa-twitter,
+.abroad__text__p__links__link .fa-square-facebook,
+.abroad__text__p__links__link .fa-at {
+    padding-right: 1rem;
+}
+
+.abroad__text__p__links__link a {
+    color: white;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: .8rem;
+}
+
+.abroad__text__p__links__link:first-of-type{
+    background-color: #306199;
+}
+.abroad__text__p__links__link:nth-of-type(2){
+    background-color: #26C4F1;
+}
+.abroad__text__p__links__link:last-of-type{
+    background-color: #999999;
+
+}
+
+.abroad__text__more {
+    text-align: center;
+    grid-area: 3 / 1 / 4 / -1;
+}
+
+.abroad__text__more__header {
+    margin-bottom: 2rem;
+}
+
+.button1 {
+    background-color: #DD0000;
+    color: white;
+    border-radius: 5px;
+    padding: .5rem 3.5rem;
+    text-transform: uppercase;
+}
+
+.abroad__text__more__p {
+    margin-top: 1.5rem;
+}
+
+.abroad__text__more__p:not(a) {
+    color: #666666;
+}
+
+.abroad__text__more__p__link {
+    text-decoration: underline;
+}
+
+
+
+/* 3rd: STORIES */
+.stories {
+    display: grid;
+    grid-template-columns:
+        repeat(auto-fit, minmax(20%, 1fr));
+    grid-template-rows: repeat(2, auto);
+    margin: 2rem auto;
+    column-gap: 2%;
+}
+
+.stories__top {
+    grid-area: 1 / 1 / 2 / -1;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: dotted 2px #999999;
+    padding-bottom: .2rem;
+    white-space: nowrap;
+}
+
+.fa-compass,
+.stories__top__arrows {
+    color: #cccccc;
+
+}
+
+.fa-compass,
+.stories__top__arrows {
+    font-size: 1.2rem;
+}
+
+.fa-compass,
+.fa-circle-right {
+    padding-left: .5rem;
+}
+
+.stories__article {
+    margin: 2rem 0;
+}
+
+.stories__article img {
+    margin-bottom: .8rem;
+}
+
+
+/* 4th: LATEST NEWS (det her afsnit er lort. her fandt jeg ud af, alle mine forrige grids skulle have været lavet med flere kolonner og ved at lave et stort overordnet grid på hele main, som derfra blev lavet til subgrids.*/
+.latestNews{
+    display: grid;
+    grid-template-columns: 33% 66%;
+    grid-template-rows: auto;
+    margin-bottom: 15rem;
+}
+.latestNews__top{
+    grid-area: 1 / 1 / 2 / -1;
+    display: grid;
+    grid-template-columns: subgrid;
+}
+.latestNews__top__header{
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.latestNews__top__link{
+    grid-area: 1 / 2 / 2 / -1;
+    justify-self: end;
+}
+
+.latestNews__aside{
+    grid-area: 2 / 1 / 3 / 2;
+    display: none;
+}
+/*table er lavet forkert. Det skulle have været lavet med som en liste og ikke en tabel med kun én række og mange kolonner...*/
+.latestNews__aside__table{
+    display: block;
+}
+.latestNews__articles{
+    grid-area: 2 / 2 / -1 / -1;
+}
+.latestNews__articles__frontpage .fa-house{
+    color:#cccccc;
+}
+
+.latestNews__articles__group{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+    grid-template-rows: auto;
+    column-gap: 3%;
+    row-gap: 3%;
+}
+
+.latestNews__articles__group__article{
+    display: grid;
+    grid-template-rows: auto;
+}
+
+.latestNews__articles__group__article strong {
+    grid-row: 1 / 2;
+    color:#DD0000;
+    text-transform: uppercase;
+}
+.latestNews__articles__group__article a {
+    grid-row: 2 / -1;
+}
+
+
+
+
+/*5th: RECOMMENDATIONS */
+.recommendations{
+    display: grid;
+    grid-template-columns: 33% 66%;
+    grid-template-rows: repeat(2, auto);
+    column-gap: 1rem;
+    margin-bottom: 10rem;
+}
+.recommendations__headers{
+    grid-area: 1 / 1 / 2 / -1;
+    display: grid;
+    grid-template-columns: 33% 66%;
+    padding: 1rem 0;
+    margin-bottom: 2rem;
+    border-bottom: dotted 2px #999999;
+}
+
+.header1{
+    grid-column: 1 / 2;
+}
+.header2{
+    grid-column: 2 / -1;
+
+}
+.recommendations__aside{
+    grid-area: 2 / 1 / -1 / 2 ;
+}
+.recommendations__aside__link{
+    font-weight: bold;
+}
+
+.recommendations__sections{
+    grid-area: 2 / 2 / -1 / -1 ;
+
+}
+.recommendations__sections__comment{
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+}
+.recommendations__sections__comment:first-of-type{
+    border-bottom: 1px solid #cccccc;
+}
+.recommendations__sections__comment__user{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 2%;
+    margin-bottom: 1rem;
+}
+.recommendations__sections__comment__user img {
+    grid-area: 1 / 1 / -1 / 2;
+    border-radius: 50%;
+}
+.name{
+    grid-area: 1 / 2 / 2 / -1;
+    font-weight: bold;
+
+}
+.date{
+    grid-area: 2 / 2 / -1 / -1;
+    color: #cccccc;
+
+}
+.recommendations__sections__comment__text{
+    margin-bottom: 1rem;
+    width: 80%;
+}
+
+.recommendations__sections__login:not(a){
+    color:#cccccc;
+}
